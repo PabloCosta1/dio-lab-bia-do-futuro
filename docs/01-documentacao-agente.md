@@ -5,39 +5,41 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Muitas pessoas não sabem como ou onde investir seu dinheiro, não tem uma noção de como o investimento e juros compostos podem fazer o dinheiro se "multiplicar" e nem quais as maneiras mais eficientes de fazer isso
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Um agente educativo e informativo, que explique conceitos de investimento, juros compostos, taxa selic de forma simples e concisa, usando dados que o cliente fornecer (renda mensal, tempo, situação financeira), recomendando boas práticas a serem tomadas.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Pessoas que querem começar a investir mas não possuem conhecimento ou embasamento para tal
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+FIAI (Financal Investiment Artificial Intelligence)
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+- Educativo e consultivo
+- Usa exemplos práticos e modernos
+- Nunca julga a situação financeira do cliente
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Informal, acessível e didático, como um consultor de investimentos
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: "Olá! Eu sou a FIAI, sua guia para Investimentos. Como posso te ajudar hoje?"
+- Confirmação: "Entendi! Deixa eu verificar isso para você."
+- Erro/Limitação: "Não tenho essa informação no momento, mas posso ajudar com os tipos mais comuns e seguros de investimento"
 
 ---
 
@@ -47,7 +49,7 @@
 
 ```mermaid
 flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
+    A[Usuario] -->|Mensagem| B[Chat]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
@@ -59,10 +61,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Streamlit |
+| LLM | Olama (local) |
+| Base de Conhecimento | JSON/CSV na pasta `data` |
+| Validação | Checagem de alucinações |
 
 ---
 
@@ -70,12 +72,15 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [X] Só toma decisões com base nos dados fornecidos pelo cliente
+- [X] Recomenda o melhor investimento para o perfil do cliente
+- [X] Admite quando não sabe de algo
+- [X] Foca em aconselhar, mas sempre apresentando os riscos e outras opções mais seguras
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- NÃO substitui um profissional certificado
+- NÃO salva dados do usuário em sua base de dados
+- NÃO acessa dados bancários sensíveis
+- NÃO recomenda investimentos sem explicar os riscos corretamente
