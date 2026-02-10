@@ -29,14 +29,10 @@ Para carregar dados, utilizar o prompt diretamente ou carregar arquivos via cód
 import pandas as pd
 import json
 
-df_historico = pd.read_csv("data/historico_atendimento.csv")
-df_transacoes = pd.read_csv("data/transacoes.csv")
-
-with open("data/perfil_investidor.json", "r", "encoding="UTF-8" as f:
-  perfil = json.load(f)
-
-with open("data/produtos_financeiros.json", "r", "encoding="UTF-8" as f:
-  produtos = json.load(f)  
+perfil = json.load(open('.\data\perfil_investidor.json'))
+transacoes = pd.read_csv('.\data\transacoes.csv')
+historico = pd.read_csv('.\data\historico.csv')
+produtos = jason.load(open('.\data\produtos.json'))  
 
 ```
 
