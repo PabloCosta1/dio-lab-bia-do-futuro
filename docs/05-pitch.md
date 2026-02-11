@@ -9,4 +9,4 @@
 
 ## Link do Vídeo
 
-[Link do vídeo]
+[[Pitch de apresentação da FIAI]](https://youtu.be/eg2FODCueLY)
