@@ -57,7 +57,7 @@ Tudo isso com foco em aprendizado, prototipação e aplicação prática de IA n
 FIAI/
 ├── data/          # Dados simulados do agente
 ├── docs/          # Documentação do projeto e do agente
-├── src/           # Código-fonte da FIAI
+├── src/           # Como baixar o codigo fonte e rodar o projeto
 └── README.md      # Documentação principal
 ```
 
