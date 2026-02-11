@@ -55,10 +55,8 @@ Tudo isso com foco em aprendizado, prototipação e aplicação prática de IA n
 
 ```text
 FIAI/
-├── assets/        # Recursos visuais e imagens
 ├── data/          # Dados simulados do agente
 ├── docs/          # Documentação do projeto e do agente
-├── examples/      # Exemplos de uso e testes
 ├── src/           # Código-fonte da FIAI
 └── README.md      # Documentação principal
 ```
